@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
@@ -16,11 +19,11 @@
             <div class="logo"><a href="#">Krixe<span>.dev</span></a></div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Projekty</a></li>
+                <li><a href="#">Usługi</a></li>
+                <li><a href="#">Umiejętności</a></li>
+                <li><a href="#">Zespół</a></li>
+                <li><a href="#">Kontakt</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -32,8 +35,8 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-content-1">Witaj na mojej stronie</div>
-                <div class="text-content-2">Tu wpisz swoje imie</div>
-                <div class="text-content-3">Jakiś <span>napis</span></div>
+                <div class="text-content-2">Tu znajdzie się nazwa</div>
+                <div class="text-content-3">Miejsce na <span>napis</span></div>
                 <a href="#">Przejdź dalej</a>
             </div>
         </div>
@@ -47,7 +50,7 @@
                     <img src="images/product1.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">W tym miejscu będzie tekst <span>Ipsum</span></div>
+                    <div class="text">Oto produkt o nazwie <span>Jeden</span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus nesciunt velit
                         voluptate tempora, veritatis dolore odit. Accusamus, expedita? Sequi rem, sit magnam laborum
                         blanditiis nam quas perferendis inventore ullam adipisci officia corporis voluptatum aperiam,
@@ -62,7 +65,7 @@
                     <img src="images/product1.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">W tym miejscu będzie tekst <span>Ipsum</span></div>
+                    <div class="text">Oto produkt o nazwie <span>Dwa</span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus nesciunt velit
                         voluptate tempora, veritatis dolore odit. Accusamus, expedita? Sequi rem, sit magnam laborum
                         blanditiis nam quas perferendis inventore ullam adipisci officia corporis voluptatum aperiam,
@@ -81,7 +84,7 @@
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
-                        <div class="text">Strony web</div>
+                        <div class="text">WWW</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident impedit totam debitis aut
                             quos neque!</p>
                     </div>
@@ -105,7 +108,6 @@
                     </div>
                 </div>
 
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia libero neque temporibus provident adipisci id aliquid vel corporis soluta. Exercitationem assumenda reprehenderit, ab expedita veniam adipisci. Reprehenderit dolores voluptates laudantium aspernatur, labore nesciunt facilis dolorum doloribus fugit at atque explicabo temporibus nostrum, tempora mollitia praesentium possimus harum. Nihil quis quidem officia architecto corrupti sunt, ea autem! Quidem, reiciendis sequi, suscipit iure dolor, vel aperiam autem maxime facere doloremque asperiores nam? Enim temporibus cum iste rem officiis accusamus sint, vel placeat veritatis? Suscipit ad reiciendis illo cumque porro odio deserunt ab, voluptate quos, possimus totam natus repellendus ipsum rem fuga quae aliquam tempora reprehenderit assumenda! Nisi modi eligendi obcaecati et laborum veniam harum maxime sit eius quam animi incidunt numquam ea accusamus praesentium provident mollitia eos cumque nobis, alias dolore ad quasi deleniti soluta! Temporibus, non ex. Repellat sunt ipsum labore esse ut voluptatibus recusandae aspernatur dolore illo, libero explicabo soluta quasi maxime suscipit ex illum pariatur saepe facilis reiciendis quo aperiam ducimus! Libero, vero ab nesciunt praesentium modi eveniet ex delectus eos alias saepe molestiae laborum beatae odio et similique? Nostrum pariatur omnis unde possimus est voluptatem, quas temporibus ex necessitatibus libero saepe, reprehenderit rem quae repellendus ab nisi.</p> -->
             </div>
         </div>
     </section>
@@ -115,7 +117,7 @@
             <div class="title"><span>Umiejętności</span></div>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">W tym miejscu będzie tekst <span>Ipsum</span></div>
+                    <div class="text">W tym miejscu będzie <span>tekst</span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus nesciunt velit
                         voluptate tempora, veritatis dolore odit. Accusamus, expedita? Sequi rem, sit magnam laborum
                         blanditiis nam quas perferendis inventore ullam adipisci officia corporis voluptatum aperiam,
@@ -141,23 +143,23 @@
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>65%</span>
+                            <span>70%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>MySQL</span>
-                            <span>75%</span>
+                            <span>65%</span>
                         </div>
                         <div class="line mysql"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>Java</span>
-                            <span>100%</span>
+                            <span>PHP</span>
+                            <span>50%</span>
                         </div>
-                        <div class="line java"></div>
+                        <div class="line php"></div>
                     </div>
                 </div>
             </div>
@@ -168,8 +170,42 @@
     <section class="team" id="team">
         <div class="max-width">
             <div class="title"><span>Zespół</span></div>
-            <div class="carousel">
-
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-1.jpeg" alt="">
+                        <div class="text">Jan Kowalski</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, fugit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-2.jpeg" alt="">
+                        <div class="text">Adam Nowak</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, fugit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-3.jpeg" alt="">
+                        <div class="text">Anna Adamowska</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, fugit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-4.jpeg" alt="">
+                        <div class="text">Piotr Nowicki</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, fugit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-5.jpeg" alt="">
+                        <div class="text">Zuzanna Kubacka</div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, fugit.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

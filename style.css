@@ -152,8 +152,18 @@ section .title span {
 
 .projects,
 .services,
-.skills {
+.skills,
+.team {
     font-family: 'Poppins', sans-serif;
+}
+.services,
+.team {
+    color: #fff;
+    background: #111;
+}
+.services .title span,
+.team .title span {
+    border: 2px #fff solid;
 }
 .projects .projects-content {
     margin-bottom: 50px;
@@ -194,9 +204,12 @@ section .title span {
 .projects .projects-content:nth-child(odd) {
     flex-direction: row-reverse;
 }
+/* usuniecie marginesu dla ostatniego 'panelu' z produktem */
 .projects .projects-content:last-child {
     margin-bottom: 0;
 }
+/* specjalne wyrownanie dla zapewnienia odpowiedniej 
+   przestrzeni miedzy obrazkiem a tekstem opisujacym produkt */
 .projects .projects-content:nth-child(even) .right > * {
     margin-left: 20px;
 }
@@ -205,13 +218,6 @@ section .title span {
 }
 /* *************** */
 /* sekcja services */
-.services {
-    color: #fff;
-    background: #111;
-}
-.services .title span {
-    border: 2px #fff solid;
-}
 .services .services-content .card {
     width: calc(33% - 20px);
     background: #222;
@@ -288,15 +294,73 @@ section .title span {
     width: 80%;
 }
 .skills .skills-content .right .js::before {
-    width: 65%;
+    width: 70%;
 }
 .skills .skills-content .right .mysql::before {
-    width: 75%;
+    width: 65%;
 }
-.skills .skills-content .right .java::before {
-    width: 100%;
+.skills .skills-content .right .php::before {
+    width: 50%;
 }
 
+/* ************* */
+/* Sekcja zespół */
+.team .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.team .carousel .card:hover {
+    background: var(--main-theme-color);
+}
+.team .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.team .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+.team .carousel .card .text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+}
+.team .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px var(--main-theme-color) solid;
+    transition: all 0.3s ease;
+}
+.team .carousel .card:hover img {
+    border-color: #fff;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid var(--main-theme-color)!important;
+    transition: all 0.3s ease;
+}
+.owl-dot:hover {
+    background: var(--main-theme-color)!important;
+    opacity: 20%;
+}
+.owl-dot.active {
+    background: var(--main-theme-color)!important;
+}
 
 @media (max-width: 1100px) {
     .home .max-width {
@@ -328,14 +392,14 @@ section .title span {
         background: #111;
         height: 100vh;
         width: 100%;
-        left: -100%;
-        top: 0;
+        left: 0;
+        top: -100vh;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
     }
     .navbar .menu.active {
-        left: 0;
+        top: 0;
     }
     .navbar .menu li {
         display: block;
@@ -368,6 +432,8 @@ section .title span {
         justify-content: center;
         margin: 0 auto 60px;
     }
+    /* usuniecie specjalnego wyrownanie dla zapewnienia odpowiedniej 
+       przestrzeni miedzy obrazkiem a tekstem opisujacym produkt */
     .projects .projects-content:nth-child(even) .right > * {
         margin-left: 0;
     }
