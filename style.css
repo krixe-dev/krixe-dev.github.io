@@ -57,6 +57,9 @@
     opacity: 0;
     transition: all 0.3s ease;
 }
+.scroll-up i {
+    transform: translateY(3px);
+}
 .scroll-up.visible {
     opacity: 1;
     bottom: 25px;
@@ -428,11 +431,11 @@ footer {
 .contact .contact-content .info .sub-title { 
     color: #222;
 }
-.contact .right form .fields {
+#contactForm .fields {
     display: flex;
 }
-.contact .right form .field, 
-.contact .right form .fields .field {
+#contactForm .field, 
+#contactForm .fields .field {
    height: 45px;
    width: 100%;
    margin-bottom: 10px;
@@ -443,12 +446,12 @@ footer {
 .contact .right form .email {
     margin-left: 10px;
 } */
-.contact .right form .textarea {
+#contactForm .textarea {
     height: 130px;
     margin-bottom: 1px; 
 }
-.contact .right form .textarea textarea,
-.contact .right form .field input {
+#contactForm .textarea textarea,
+#contactForm .field input {
     height: 100%;
     width: 100%;
     border: 2px solid lightblue;
@@ -458,10 +461,14 @@ footer {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 }
-.contact .right form .textarea textarea {
+#contactForm .textarea textarea {
     resize: none;
 }
-.contact .right form .common-button {
+#contactForm .textarea textarea:focus,
+#contactForm .field input:focus {
+    border: 2px solid var(--main-theme-color);
+}
+#contactForm .common-button {
     transform: translateY(-10px);
 }
 
@@ -507,14 +514,14 @@ footer span a{
         background: #111;
         height: 100vh;
         width: 100%;
-        left: 0;
-        top: -100vh;
+        left: -150%;
+        top: 0;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
     }
     .navbar .menu.active {
-        top: 0;
+        left: 0;
     }
     .navbar .menu li {
         display: block;
