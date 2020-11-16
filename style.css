@@ -328,14 +328,14 @@ section .title span {
         background: #111;
         height: 100vh;
         width: 100%;
-        left: 0;
-        top: -100%;
+        left: -100%;
+        top: 0;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
     }
     .navbar .menu.active {
-        top: 0;
+        left: 0;
     }
     .navbar .menu li {
         display: block;
