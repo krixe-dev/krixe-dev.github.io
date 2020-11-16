@@ -5,7 +5,18 @@ $(document).ready(function(){
         } else {
             $('.navbar').removeClass("sticky");
         }
+
+        if(this.scrollY > 500) {
+            $('.scroll-up').addClass("visible");
+        } else {
+            $('.scroll-up').removeClass("visible");
+        }
     });
+
+    $('.scroll-up').click(function() {
+        $('html').animate({scrollTop: 0});
+    });
+
     $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
