@@ -29,9 +29,8 @@
 }
 .slides .slide img {
     width: 100%;
-    /* height: 40%; */
-    /* max-height: 400px; */
-    object-fit: contain;
+    height: 60vh; 
+    object-fit: cover;
 }
 .slides .prev, 
 .slides .next {
@@ -95,9 +94,13 @@
 
 .wrapper {
     padding: 50px 50px;
-}
-.wrapper p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: justify;
+}
+.wrapper .max-width {
+    max-width: 1300px;
 }
 .wrapper .title {
     font-size: 2rem;
@@ -110,6 +113,7 @@
     min-height: 50vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 30px;
     background-size: cover;
     background-attachment: fixed;
@@ -121,6 +125,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1300px;
 }
 .content .box {
     width: calc(25% - 30px);
