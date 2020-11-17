@@ -26,6 +26,13 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
+    var typed = new Typed(".typed", {
+        strings: ["informacje", "projekty", "usługi"],
+        typeSpeed: 80,
+        backSpeed: 40,
+        loop: true
+    });
+
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,

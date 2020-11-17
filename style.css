@@ -438,7 +438,7 @@ footer {
 #contactForm .fields .field {
    height: 45px;
    width: 100%;
-   margin-bottom: 10px;
+   margin-bottom: 15px;
 }
 /* .contact .right form .name {
     margin-right: 10px;
@@ -457,12 +457,13 @@ footer {
     border: 2px solid lightblue;
     border-radius: 4px;
     outline: none;
-    padding: 0 10px;
+    padding: 0 15px;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 }
 #contactForm .textarea textarea {
     resize: none;
+    padding-top: 10px;
 }
 #contactForm .textarea textarea:focus,
 #contactForm .field input:focus {
