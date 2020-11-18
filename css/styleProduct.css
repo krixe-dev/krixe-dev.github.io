@@ -12,10 +12,12 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-.slides-wrapper {
+body {
     background: url("../images/background-site.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+.slides-wrapper {
     /* height: 70vh; */
     padding: 50px 50px;
     position: relative;
@@ -98,25 +100,23 @@
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    background: #fff;
 }
 .wrapper .max-width {
     max-width: 1300px;
 }
 .wrapper .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .counters {
-    background: url("../images/background-site.jpg");
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 30px;
-    background-size: cover;
-    background-attachment: fixed;
 }
 .counters .content {
     display: flex;
