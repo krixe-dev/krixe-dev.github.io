@@ -32,40 +32,6 @@
     color: var(--main-theme-color);
     background: none;
 }
-
-.menu-btn {
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-.scroll-up {
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    background: var(--main-theme-color);
-    right: 25px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 2rem;
-    border-radius: 50%;
-    z-index: 999;
-    pointer-events: none;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-.scroll-up i {
-    transform: translateY(3px);
-}
-.scroll-up.visible {
-    opacity: 1;
-    bottom: 25px;
-    pointer-events: auto;
-}
-
 section {  
     padding-top: 100px;
     padding-bottom: 100px;
@@ -83,55 +49,7 @@ section .title span {
     padding: 10px 10px;
     border: 2px #000 solid;
 }
-/* **************** */
-/* sekcja nawigacji */
-.navbar {
-    position: fixed;
-    width: 100%;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-    z-index: 999;
-}
-.navbar.sticky {
-    padding: 15px 0;
-    top: 0;
-    background: var(--main-theme-color);
-}
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a {
-    color: #fff;
-    font-weight: 600;
-    font-size: 2rem;
-}
-.navbar .logo a span {
-    color: var(--main-theme-color);
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span {
-    color: #fff;
 
-}
-.navbar .menu li {
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover {
-    color: #fff;
-    padding-bottom: 10px;
-    border-bottom: #fff 2px solid;
-}
 /* *********** */
 /* sekcja home */
 .home {
@@ -503,37 +421,6 @@ footer span a{
 }
 
 @media (max-width: 940px) {
-    .menu-btn {
-        display: block;
-        z-index: 9999;
-    }
-    .menu-btn i.active:before {
-        content: "\f00d";
-    }
-    .navbar .menu {
-        position: fixed;
-        background: #111;
-        height: 100vh;
-        width: 100%;
-        left: -150%;
-        top: 0;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active {
-        left: 0;
-    }
-    .navbar .menu li {
-        display: block;
-    }
-    .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 2rem;
-        padding-bottom: 12px;
-        border-bottom: none;
-    }
     .home .home-content .text-content-2 {
         font-size: 4rem;
     }
@@ -553,7 +440,7 @@ footer span a{
     .projects .projects-content .left {
         display: flex;
         justify-content: center;
-        margin: 0 auto 60px;
+        margin: 0 auto 10px;
     }
     /* usuniecie specjalnego wyrownanie dla zapewnienia odpowiedniej 
        przestrzeni miedzy obrazkiem a tekstem opisujacym produkt */
