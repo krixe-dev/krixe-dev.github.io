@@ -54,7 +54,7 @@ section .title span {
 /* sekcja home */
 .home {
     display: flex;
-    background: url("../images/banner-3.jpg") no-repeat center;
+    background: url("../images/image2.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
